@@ -1,0 +1,76 @@
+/*background image*/
+ body,
+ html {
+ 	width: 100%;
+ 	height: 100%;
+ 	font-family:'Lato', sans-serif;
+ 	background: url(background.jpg) no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+ }  
+
+/*horizontal centre for all content*/
+h1, .content{
+	color: rgba(250, 250, 255, 0.96);
+	text-align: center;
+	text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.75);
+}
+
+/*vertical cetnre for all content*/
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* vertical centering */
+  align-items: center;      /* horizontal centering */
+  height: 100vh;            /* full height of viewport */
+  text-align: center;
+}
+
+/*text overlay*/
+.text-overlay {
+  background-color: rgba(0, 0, 0, 0.4); /* semi-transparent black */
+  padding: 20px 40px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/*custom button*/
+.btn-primary {
+  background-color: #ff5733;     /* your custom color */
+  border-color: #ff5733;
+}
+
+.buffer {
+	height: 1.5rem;	
+}
+
+.btn-primary:hover {
+  background-color: #e64e2d;     /* slightly darker on hover */
+  border-color: #e64e2d;
+}
+
+/*navbar and nav menu*/
+.custom-navbar {
+  background-color: rgba(0, 0, 0, 0.3);  /* translucent */
+  backdrop-filter: blur(10px);          /* optional glassy look */
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* subtle bottom border */
+}
+
+.navbar-nav .nav-link {
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #FFD700; /* bright gold on hover */
+}
+
+.brand-text {
+  font-size: 1.1rem;
+  color: white;
+  margin-top: 2px; /* Adjust if needed */
+}
